@@ -28,5 +28,3 @@ let p = Person::from_str("name:lu\nTV:show");
 `cargo expand --test test_builder ` to expand the test file `test_builder.rs`
 
 
-# TODO
-[ ] support 'require' mark
