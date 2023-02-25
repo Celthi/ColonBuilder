@@ -16,6 +16,9 @@ struct Person {
     #[cb(abbr="TV")]
     favoriteTVShows: Option<String>
 }
+
+let p = Person::from_str("name:lu\nTV:show");
+
 ```
 
 
