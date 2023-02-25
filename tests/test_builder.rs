@@ -14,7 +14,6 @@ macro_rules! reg {
 #[allow(non_snake_case)]
 #[derive(ColonBuilder)]
 struct Person {
-    #[cb(require)]
     name: String,
     hobbies: Vec<String>,
     #[cb(abbr="TV")]
