@@ -23,8 +23,6 @@ struct Person {
 
 #[test]
 fn test_abbr() {
-    fn t() {}
-    t();
     let p = Person::from_str("name:lu\nTV:show");
     assert_eq!(p.name, "lu");
     assert_eq!(p.hobbies, Vec::<String>::new());
