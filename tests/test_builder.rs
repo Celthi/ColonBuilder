@@ -1,7 +1,8 @@
 // #[macro_use]
-// extern crate colonbuilder;
+extern crate colonbuilder;
 
 use colonbuilder::ColonBuilder;
+
 use regex;
 
 macro_rules! reg {
@@ -17,7 +18,9 @@ struct Person {
     name: String,
     hobbies: Vec<String>,
     #[cb(abbr="TV")]
-    favoriteTVShows: Option<String>
+    favoriteTVShows: Option<String>,
+    books: Option<Vec<String>>,
+    work: Option<String>,
 }
 
 #[test]
@@ -30,4 +33,5 @@ fn test_abbr() {
     assert_eq!(p.name, "lu");
     assert_eq!(p.hobbies, Vec::<String>::new());
     assert_eq!(p.favoriteTVShows, None);
+
 }
