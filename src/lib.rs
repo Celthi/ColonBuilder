@@ -135,9 +135,12 @@ fn get_abbr(f: &syn::Field) -> Option<String> {
     f.attrs
         .iter()
         .find(|attr| attr.path.is_ident(CB_PATH))
-        .and_then(|attr| match attr.parse_meta() {
-            Ok(ref data) => process_meta(data),
-            Err(_) => None,
+        .and_then(|attr|
+            {
+                match attr.parse_meta() {
+                    Ok(ref data) => process_meta(data),
+                    Err(_) => None,
+            }
         })
 }
 

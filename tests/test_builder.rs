@@ -33,5 +33,9 @@ fn test_abbr() {
     assert_eq!(p.name, "lu");
     assert_eq!(p.hobbies, Vec::<String>::new());
     assert_eq!(p.favoriteTVShows, None);
+    let p = Person::from_str("name:lu\nhobbies:book,game,ball");
+    assert_eq!(p.name, "lu");
+    assert_eq!(p.hobbies, vec!["book".to_string(), "game".to_string(), "ball".to_string()]);
+    assert_eq!(p.favoriteTVShows, None);
 
 }

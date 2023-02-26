@@ -1,7 +1,7 @@
 
 # Colon Builder
 
-[<img alt="build status" src="https://img.shields.io/github/actions/workflow/status/Celthi/ColonBuilder/rust.yml?branch=main&style=for-the-badge" height="20">](https://github.com/Celthi/ColonBuilder/actions?query=branch%3Amain)
+[![Build status](https://github.com/Celthi/ColonBuilder/actions/workflows/rust.yml/badge.svg)](https://github.com/Celthi/ColonBuilder/blob/main/.github/workflows/rust.yml)
 
 Build structure from colon separate fields like
 ```
